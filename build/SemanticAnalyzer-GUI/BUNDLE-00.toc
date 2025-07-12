@@ -1,0 +1,4 @@
+([('SemanticAnalyzer-GUI',
+   '/Users/edwinespinal/Documents/UTESA/Compiladores/Tarea '
+   '5/analizador-semantico-edwin/dist/SemanticAnalyzer-GUI',
+   'EXECUTABLE')],)

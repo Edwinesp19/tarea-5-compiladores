@@ -1,0 +1,4 @@
+([('AnalizadorSintactico-GUI',
+   '/Users/edwinespinal/Documents/UTESA/Compiladores/Tarea '
+   '5/analizador-semantico-edwin/dist/AnalizadorSintactico-GUI',
+   'EXECUTABLE')],)

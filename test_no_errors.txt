@@ -1,0 +1,59 @@
+// Test file without semantic errors
+var int x = 10;
+var float y = 3.14;
+var string name = "Edwin";
+var bool flag = true;
+
+// Correct assignments
+x = 20;
+y = x;  // int to float conversion (allowed)
+name = "Updated name";
+flag = false;
+
+// Function declaration
+function int add(int a, int b) {
+    var int result = a + b;
+    return result;
+}
+
+// Another function
+function float multiply(float a, float b) {
+    return a * b;
+}
+
+// Block with new scope
+{
+    var int localVar = 100;
+    x = localVar;  // OK: can access outer scope
+    var string localName = "Local";
+}
+
+// Using different scope
+{
+    var int localVar = 200;  // OK: different scope
+    localVar = 300;
+}
+
+// Conditional statement
+if (x > 10) {
+    var string message = "x is greater than 10";
+    var int temp = x + 5;
+}
+
+// Loop
+while (flag == false) {
+    var int counter = 0;
+    counter = counter + 1;
+    if (counter > 5) {
+        flag = true;
+    }
+}
+
+// Nested blocks
+{
+    var int outer = 1;
+    {
+        var int inner = 2;
+        outer = inner;
+    }
+}

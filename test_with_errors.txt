@@ -1,0 +1,49 @@
+// Test file with semantic errors
+var int x = 10;
+var float y = 3.14;
+var string name = "Edwin";
+var bool flag = true;
+
+// Error: Type mismatch
+var int badInt = "not a number";
+
+// Error: Using undefined variable
+undefinedVar = 5;
+
+// Correct assignment
+x = 20;
+y = x;  // int to float conversion (allowed)
+
+// Error: Redeclaring variable in same scope
+var int x = 30;
+
+// Function declaration
+function int add(int a, int b) {
+    var int result = a + b;
+    return result;
+}
+
+// Block with new scope
+{
+    var int localVar = 100;
+    x = localVar;  // OK: can access outer scope
+}
+
+// Error: localVar is out of scope here
+localVar = 200;
+
+// Conditional statement
+if (x > 10) {
+    var string message = "x is greater than 10";
+}
+
+// Loop
+while (flag) {
+    flag = false;
+}
+
+// Error: Type mismatch in assignment
+name = 42;
+
+// Error: Using undefined function
+result = multiply(5, 10);
