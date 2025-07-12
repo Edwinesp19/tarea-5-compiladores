@@ -215,10 +215,10 @@ python semantic_analyzer.py test_no_errors.txt
 
 ## Author
 
-**Edwin Espinal**
-- Course: Compiladores
-- Institution: UTESA
-- Year: 2024
+**Edwin Espinal - 2190521**
+- Compiladores
+-  UTESA
+-  2025
 
 ## License
 
